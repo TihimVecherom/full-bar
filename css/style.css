@@ -759,7 +759,7 @@ h6 {
           transform: translate(0, -50%);
 }
 
-._active-body {
+._body-active {
   position: absolute;
   width: 100%;
   height: -webkit-max-content;
@@ -770,7 +770,7 @@ h6 {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  top: -13px;
+  top: 20px;
   background: -o-linear-gradient(344.6deg, #3B3B3B 0%, #161616 95.89%);
   background: linear-gradient(105.4deg, #3B3B3B 0%, #161616 95.89%);
 }
