@@ -763,7 +763,7 @@ h6 {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  left: 0;
+  top: -13px;
   background: -o-linear-gradient(344.6deg, #3B3B3B 0%, #161616 95.89%);
   background: linear-gradient(105.4deg, #3B3B3B 0%, #161616 95.89%);
 }
@@ -1114,8 +1114,8 @@ h6 {
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
-    top: -13px;
-    left: -100%;
+    top: -500px;
+    left: 0;
     display: block;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
