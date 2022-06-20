@@ -759,7 +759,7 @@ h6 {
           transform: translate(0, -50%);
 }
 
-._active-body {
+.active-body {
   -webkit-animation-name: active-body;
           animation-name: active-body;
   -webkit-animation-duration: 0.3s;

@@ -199,7 +199,7 @@
     const menuBody = document.querySelector(".menu__body");
     if (menuBurger) menuBurger.addEventListener("click", (function(e) {
         menuBurger.classList.toggle("_burger-active");
-        if (menuBody) menuBody.classList.toggle("_active-body");
+        if (menuBody) menuBody.classList.toggle("active-body");
     }));
     window["FLS"] = true;
     isWebp();
