@@ -794,50 +794,6 @@ h6 {
           transform: translate(0, -50%);
 }
 
-._active-body {
-  -webkit-animation-name: active-body;
-          animation-name: active-body;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  top: -500px;
-}
-
-@-webkit-keyframes active-body {
-  100% {
-    position: absolute;
-    width: 100%;
-    height: -webkit-max-content;
-    height: max-content;
-    left: 0;
-    display: block;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    top: -13px;
-    background: linear-gradient(105.4deg, #3B3B3B 0%, #161616 95.89%);
-  }
-}
-
-@keyframes active-body {
-  100% {
-    position: absolute;
-    width: 100%;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    left: 0;
-    display: block;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    top: -13px;
-    background: -o-linear-gradient(344.6deg, #3B3B3B 0%, #161616 95.89%);
-    background: linear-gradient(105.4deg, #3B3B3B 0%, #161616 95.89%);
-  }
-}
-
 .icon-menu {
   display: none;
 }
@@ -1254,6 +1210,50 @@ h6 {
     background: rgba(255, 0, 0, 0);
     background-size: cover;
   }
+
+  ._active-body {
+    -webkit-animation-name: active-body;
+            animation-name: active-body;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    top: -500px;
+  }
+
+@-webkit-keyframes active-body {
+    100% {
+      position: absolute;
+      width: 100%;
+      height: -webkit-max-content;
+      height: max-content;
+      left: 0;
+      display: block;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      top: -13px;
+      background: linear-gradient(105.4deg, #3B3B3B 0%, #161616 95.89%);
+    }
+}
+
+@keyframes active-body {
+    100% {
+      position: absolute;
+      width: 100%;
+      height: -webkit-max-content;
+      height: -moz-max-content;
+      height: max-content;
+      left: 0;
+      display: block;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      top: -13px;
+      background: -o-linear-gradient(344.6deg, #3B3B3B 0%, #161616 95.89%);
+      background: linear-gradient(105.4deg, #3B3B3B 0%, #161616 95.89%);
+    }
+}
 
   .icon-menu {
     display: block;
