@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220620215606">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220622000936">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,9 +37,9 @@
 
 						<nav class="menu__body ">
 							<ul class="menu__list">
-								<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+								<li class="menu__item"><a href="home.html" class="menu__link">Главная</a></li>
 								<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
-								<li class="menu__item"><a href="#" class="menu__link">Меню</a></li>
+								<li class="menu__item"><a href="pizza.html" class="menu__link">Меню</a></li>
 								<li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
 								<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
 								<li class="menu__item"><a href="#" class="menu__link">Доставка</a></li>
@@ -219,15 +219,91 @@
 								</label>
 							</div>
 						</div>
-						</p>
+					</div>
+					<div class="dishes__wave-down"></div>
+				</section>
+
+				<section class="reservation">
+					<div class="reservation__container">
+						<div class="reservation__decor-ibg">
+							<img class="img img-reservation" src="img/main/reservation/soup.png" alt="Супчик">
+						</div>
+						<div class="reservation__title">
+							<h2 class="title">ЗАБРОНИРОВАТЬ СТОЛИК</h2>
+						</div>
+						<div class="reservation__block">
+							<div class="reservation__picture-ibg">
+								<img class="img img-reservation" src="img/main/reservation/foto.png" alt="Фото зала">
+								<div class="picture-ibg">
+									<img class="img img-reservation-decor" src="img/main/reservation/decor.png" alt="Забронированно">
+								</div>
+							</div>
+							<div class="reservation__content">
+								<div class="form-reservation">
+									<div class="form-reservation__title">Заполните, пожалуйста, форму!</div>
+									<div class="form-reservation__items">
+										<input class="input-reservation " autocomplete="off" placeholder="Выберите дату" type="text" name="date">
+										<input class="input-reservation" autocomplete="off" placeholder="Выберите время" type="text" name="time">
+										<input class="input-reservation" autocomplete="off" placeholder="Кол-во гостей" type="text" name="person">
+										<input class="input-reservation " autocomplete="off" placeholder="Ваше имя" type="text" name="name">
+										<input class="input-reservation" autocomplete="off" placeholder="Номер телефона" type="text" name="number">
+										<button class="button-reservation">Забронировать</button>
+									</div>
+									<div class="form-reservation__paragraf">*Отмена брони производится по звонку в кафе минимум
+										за
+										час до посещения!</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
 				</section>
+				<div class="reservation__wave-down"></div>
 			</div>
 
 		</main>
 		<footer class="footer">
-			<div class="footer__container">
+
+			<div class="footer__content">
+
+				<section class="footer__menu menu">
+					<div class="menu__container menu-footer-container">
+
+
+
+						<a href="#" class="menu__logo-ibg">
+							<img class="img" src="img/header/logo/logo.png" alt="Логотип">
+							<span class="menu__logo-name">Full Bar</span>
+						</a>
+
+
+
+
+						<nav class="menu__body-footer ">
+							<ul class="menu__list-footer">
+								<li class="menu__item item-footer"><a href="home.html" class="menu__link link-footer">Главная</a></li>
+								<li class="menu__item item-footer"><a href="#" class="menu__link link-footer">О нас</a></li>
+								<li class="menu__item item-footer"><a href="#" class="menu__link link-footer">Меню</a></li>
+								<li class="menu__item item-footer"><a href="#" class="menu__link link-footer">Акции</a></li>
+								<li class="menu__item item-footer"><a href="#" class="menu__link link-footer">Контакты</a></li>
+								<li class="menu__item item-footer"><a href="#" class="menu__link link-footer">Доставка</a></li>
+							</ul>
+						</nav>
+						<section class="footer__info-block info-block ">
+							<div class="info-block__container">
+								<div class="info-block__items items-footer">
+									<div class="info-block__item item-info-block-footer">г. Химки, пр-т. Мельникова 2Б. ТД « Подземка»
+									</div>
+									<div class="info-block__item item-info-block-footer ">ПН-ВС: 12:00-23:00
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</section>
 			</div>
+
+
 		</footer>
 	</div>
 	<!-- <div id="popup" aria-hidden="true" class="popup">
@@ -240,7 +316,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220620215606"></script>
+	<script src="js/app.min.js?_v=20220622000936"></script>
 </body>
 
 </html>
