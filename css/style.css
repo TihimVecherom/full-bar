@@ -1091,7 +1091,6 @@ input:focus {
 .card__basket::after {
   content: "";
   display: block;
-  position: absolute;
   z-index: 4;
   width: 100%;
   height: 100%;
@@ -1140,8 +1139,8 @@ input[type=radio] + label span {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 13px;
+  line-height: 18px;
   text-align: center;
   color: #3B3B3B;
   background: red;
@@ -1158,6 +1157,393 @@ input[type=radio] + label span {
 input[type=radio]:checked + label span {
   background: #E95A0E;
   color: #FFFFFF;
+}
+
+.popap__main-buttons label span {
+  width: 100px;
+  min-height: 36px;
+}
+
+input[type=radio]:checked + label .span-decor {
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  color: #FFFFFF;
+  position: relative;
+}
+
+input[type=radio]:checked + label .span-decor::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -18px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 18px solid #E95A0E;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.checkbox-popap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+}
+
+.checkbox-popap input[type=checkbox] {
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+.checkbox-popap span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #3B3B3B;
+  min-width: 100px;
+  height: 36px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  background: #FFFFFF;
+  border: 1px solid #D1D1D1;
+  border-radius: 30px;
+  border-radius: 50px;
+}
+
+/* Checked */
+
+.checkbox-popap input[type=checkbox]:checked + span {
+  background: #FFFFFF;
+  border: 1px solid #3B3B3B;
+  border-radius: 30px;
+  color: #E95A0E;
+}
+
+/* Focus */
+
+/* Hover */
+
+.checkbox-popap:hover {
+  color: rgb(255, 255, 255);
+}
+
+/* Active */
+
+.checkbox--popap input[type=checkbox]:active:not(:disabled) + span {
+  background: rgba(210, 197, 172, 0);
+}
+
+/* Disabled */
+
+.checkbox--popap input[type=checkbox]:checked:disabled + span {
+  background: #FFFFFF;
+  border: 1px solid #3B3B3B;
+  border-radius: 30px;
+  color: #E95A0E;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.popap-pizza {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(59, 59, 59, 0.568627451);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.wrapper-popap {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.wrapper-popap::-webkit-scrollbar {
+  display: none;
+}
+
+/* Скрываем scrollbar для IE, Edge и Firefox */
+
+.wrapper-popap {
+  -ms-overflow-style: none;
+  /* IE и Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.popap-pizza:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fix-popap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 0, 0, 0);
+}
+
+.popap-area {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: default;
+}
+
+.backgraund-popap {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.popap {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  width: 700px;
+  z-index: 100;
+  top: -100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 30px 30px 25px 30px;
+  -webkit-transition: 0, 5s;
+  -o-transition: 0, 5s;
+  transition: 0, 5s;
+}
+
+.popap__container {
+  padding: 0;
+}
+
+.popap__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  padding-bottom: 30px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.popap__header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  height: 1px;
+  background-color: #3B3B3B;
+  opacity: 0.2;
+}
+
+.popap__picture-ibg {
+  min-width: 260px;
+  height: 160px;
+}
+
+.popap__picture-ibg img {
+  border-radius: 5px;
+}
+
+.popap__title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  /* identical to box height */
+  color: #3B3B3B;
+  margin-bottom: 11px;
+}
+
+.popap__paragraf {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3B3B3B;
+  margin-bottom: 14px;
+}
+
+.popap__buttons-size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.popap__body {
+  padding-bottom: 30px;
+  position: relative;
+  margin-bottom: 17px;
+}
+
+.popap__body::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  height: 1px;
+  background-color: #3B3B3B;
+  opacity: 0.2;
+}
+
+.popap__body-title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3B3B3B;
+  margin-bottom: 20px;
+}
+
+.popap__main-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.popap__choise-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.popap__basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popap__price {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #3B3B3B;
+}
+
+.popap-pizza:target .popap {
+  top: 10%;
+}
+
+.card__basket:target {
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.top-0 {
+  top: 10%;
+}
+
+.button-popap {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background: -o-linear-gradient(355.75deg, #E95A0E 0%, #BB4202 100%);
+  background: linear-gradient(94.25deg, #E95A0E 0%, #BB4202 100%);
+  -webkit-box-shadow: 0px 20px 40px rgba(233, 90, 14, 0.3);
+          box-shadow: 0px 20px 40px rgba(233, 90, 14, 0.3);
+  border-radius: 40px;
+  width: 120px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header__info-block {
@@ -1526,6 +1912,12 @@ input[type=radio]:checked + label span {
   }
 }
 
+@media (max-width: 998px) {
+  .popap {
+    padding: 10px;
+  }
+}
+
 @media (max-width: 991.98px) {
   .reservation__picture-ibg {
     max-height: none;
@@ -1564,6 +1956,13 @@ input[type=radio]:checked + label span {
     -webkit-transform: translate(-50%, 0%);
         -ms-transform: translate(-50%, 0%);
             transform: translate(-50%, 0%);
+  }
+}
+
+@media (max-width: 720px) {
+  .popap {
+    width: 96%;
+    padding: 10px;
   }
 }
 
@@ -1623,11 +2022,44 @@ input[type=radio]:checked + label span {
   }
 }
 
+@media (max-width: 650px) {
+  .popap__header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+
+  .popap__buttons-size {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .popap__body-title {
+    text-align: center;
+  }
+
+  .popap__main-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (max-width: 479.98px) {
   .menu__logo-ibg {
     top: -38px;
     width: 110px;
     padding-bottom: 96px;
+  }
+}
+
+@media (max-width: 420px) {
+  .popap {
+    top: 15%;
   }
 }
 

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220622000936">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220622210757">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,8 @@
 
 <body>
 	<div class="wrapper">
+		<div id="fix" class="fix-popap"></div>
+
 		<header class="header">
 			<div class="header__content">
 				<section class="header__info-block info-block ">
@@ -61,7 +63,96 @@
 			</div>
 		</header>
 		<main class="main">
+			<div id="popup" class="popap-pizza">
+				<div class="wrapper-popap">
+					<div class="backgraund-popap"></div>
+					<a class="popap-area" href="#fix"></a>
+					<div class="popap">
+
+						<div class="popap__container">
+							<div class="popap__header">
+								<div class="popap__picture-ibg">
+									<img src="img/main/pizza/pizza.jpg" alt="Пицца">
+								</div>
+								<div class="popap__header-content">
+									<div class="popap__title">Маргарита</div>
+									<div class="popap__paragraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Maecenas
+										dui
+										quam nunc nibh quam</div>
+									<div class="popap__buttons-size">
+										<input checked type="radio" id="r1" name="choise1" />
+										<label for="r1"><span>30 см</span></label>
+										<input type="radio" id="r2" name="choise1" />
+										<label for="r2"><span>50 см</span></label>
+									</div>
+									<div class="popap__price">
+										450р</div>
+								</div>
+							</div>
+							<div class="popap__body">
+								<div class="popap__body-title">Вы можете добавить либо убрать ингредиенты на свой вкус</div>
+								<div class="popap__main-buttons">
+									<input checked type="radio" id="p1" name="popap-choise" />
+									<label for="p1"><span class="span-decor">Добавить</span></label>
+									<input type="radio" id="p2" name="popap-choise" />
+									<label for="p2"><span class="span-decor">Убрать</span></label>
+								</div>
+								<div class="popap__choise-buttons">
+									<label class="checkbox-popap">
+										<input checked type="checkbox">
+										<span>Лист салата</span>
+									</label>
+									<label class="checkbox-popap">
+										<input type="checkbox">
+										<span>Кукуруза</span>
+									</label>
+									<label class="checkbox-popap">
+										<input type="checkbox">
+										<span>Перец чили</span>
+									</label>
+									<label class="checkbox-popap">
+										<input checked type="checkbox">
+										<span>Ананас</span>
+									</label>
+									<label class="checkbox-popap">
+										<input type="checkbox">
+										<span>Грибы</span>
+									</label>
+									<label class="checkbox-popap">
+										<input checked type="checkbox">
+										<span>Филе кур.</span>
+									</label>
+									<label class="checkbox-popap">
+										<input type="checkbox">
+										<span>Пармезан</span>
+									</label>
+									<label class="checkbox-popap">
+										<input type="checkbox">
+										<span>Огурец</span>
+									</label>
+									<label class="checkbox-popap">
+										<input type="checkbox">
+										<span>Охот.колбас.</span>
+									</label>
+									<label class="checkbox-popap">
+										<input type="checkbox">
+										<span>Зелень</span>
+									</label>
+								</div>
+							</div>
+							<div class="popap__basket">
+								<div class="popap__price"><span>Итого:</span>
+									550р</div>
+								<a href="#fix" class="button-popap">Заказать</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
 			<div class="main__content">
+
 				<section class="pizza">
 					<div class="pizza__container">
 						<div class="pizza__cards">
@@ -80,7 +171,7 @@
 										<label for="c2"><span>50 см</span></label>
 									</div>
 									<div class="card__price">450р</div>
-									<a href="#" class="card__basket"></a>
+									<a href="#popup" class="card__basket"></a>
 									<div class="card__decor-1"></div>
 									<div class="card__decor-2"></div>
 								</div>
@@ -101,7 +192,7 @@
 										<label for="c4"><span>50 см</span></label>
 									</div>
 									<div class="card__price">450р</div>
-									<a href="#" class="card__basket"></a>
+									<a href="#popup" class="card__basket"></a>
 									<div class="card__decor-1"></div>
 									<div class="card__decor-2"></div>
 								</div>
@@ -121,7 +212,7 @@
 										<label for="c6"><span>50 см</span></label>
 									</div>
 									<div class="card__price">450р</div>
-									<a href="#" class="card__basket"></a>
+									<a href="#popup" class="card__basket"></a>
 									<div class="card__decor-1"></div>
 									<div class="card__decor-2"></div>
 								</div>
@@ -141,7 +232,7 @@
 										<label for="c8"><span>50 см</span></label>
 									</div>
 									<div class="card__price">450р</div>
-									<a href="#" class="card__basket"></a>
+									<a href="#popup" class="card__basket"></a>
 									<div class="card__decor-1"></div>
 									<div class="card__decor-2"></div>
 								</div>
@@ -161,7 +252,7 @@
 										<label for="c10"><span>50 см</span></label>
 									</div>
 									<div class="card__price">450р</div>
-									<a href="#" class="card__basket"></a>
+									<a href="#popup" class="card__basket"></a>
 									<div class="card__decor-1"></div>
 									<div class="card__decor-2"></div>
 								</div>
@@ -181,7 +272,7 @@
 										<label for="c12"><span>50 см</span></label>
 									</div>
 									<div class="card__price">450р</div>
-									<a href="#" class="card__basket"></a>
+									<a href="#popup" class="card__basket"></a>
 									<div class="card__decor-1"></div>
 									<div class="card__decor-2"></div>
 								</div>
@@ -201,7 +292,7 @@
 										<label for="c14"><span>50 см</span></label>
 									</div>
 									<div class="card__price">450р</div>
-									<a href="#" class="card__basket"></a>
+									<a href="#popup" class="card__basket"></a>
 									<div class="card__decor-1"></div>
 									<div class="card__decor-2"></div>
 								</div>
@@ -221,7 +312,7 @@
 										<label for="c16"><span>50 см</span></label>
 									</div>
 									<div class="card__price">450р</div>
-									<a href="#" class="card__basket"></a>
+									<a href="#popup" class="card__basket"></a>
 									<div class="card__decor-1"></div>
 									<div class="card__decor-2"></div>
 								</div>
@@ -248,7 +339,7 @@
 													<label for="c18"><span>50 см</span></label>
 												</div>
 												<div class="card__price">450р</div>
-												<a href="#" class="card__basket"></a>
+												<a href="#popup" class="card__basket"></a>
 												<div class="card__decor-1"></div>
 												<div class="card__decor-2"></div>
 											</div>
@@ -269,7 +360,7 @@
 													<label for="c20"><span>50 см</span></label>
 												</div>
 												<div class="card__price">450р</div>
-												<a href="#" class="card__basket"></a>
+												<a href="#popup" class="card__basket"></a>
 												<div class="card__decor-1"></div>
 												<div class="card__decor-2"></div>
 											</div>
@@ -290,7 +381,7 @@
 													<label for="c22"><span>50 см</span></label>
 												</div>
 												<div class="card__price">450р</div>
-												<a href="#" class="card__basket"></a>
+												<a href="#popup" class="card__basket"></a>
 												<div class="card__decor-1"></div>
 												<div class="card__decor-2"></div>
 											</div>
@@ -311,7 +402,7 @@
 													<label for="c24"><span>50 см</span></label>
 												</div>
 												<div class="card__price">450р</div>
-												<a href="#" class="card__basket"></a>
+												<a href="#popup" class="card__basket"></a>
 												<div class="card__decor-1"></div>
 												<div class="card__decor-2"></div>
 											</div>
@@ -332,7 +423,7 @@
 													<label for="c26"><span>50 см</span></label>
 												</div>
 												<div class="card__price">450р</div>
-												<a href="#" class="card__basket"></a>
+												<a href="#popup" class="card__basket"></a>
 												<div class="card__decor-1"></div>
 												<div class="card__decor-2"></div>
 											</div>
@@ -353,7 +444,7 @@
 													<label for="c28"><span>50 см</span></label>
 												</div>
 												<div class="card__price">450р</div>
-												<a href="#" class="card__basket"></a>
+												<a href="#popup" class="card__basket"></a>
 												<div class="card__decor-1"></div>
 												<div class="card__decor-2"></div>
 											</div>
@@ -374,7 +465,7 @@
 													<label for="c30"><span>50 см</span></label>
 												</div>
 												<div class="card__price">450р</div>
-												<a href="#" class="card__basket"></a>
+												<a href="#popup" class="card__basket"></a>
 												<div class="card__decor-1"></div>
 												<div class="card__decor-2"></div>
 											</div>
@@ -395,7 +486,7 @@
 													<label for="c32"><span>50 см</span></label>
 												</div>
 												<div class="card__price">450р</div>
-												<a href="#" class="card__basket"></a>
+												<a href="#popup" class="card__basket"></a>
 												<div class="card__decor-1"></div>
 												<div class="card__decor-2"></div>
 											</div>
@@ -578,17 +669,7 @@
 
 		</footer>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
-			</div>
-		</div>
-	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20220622000936"></script>
+	<script src="js/app.min.js?_v=20220622210757"></script>
 </body>
 
 </html>
