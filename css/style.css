@@ -612,6 +612,7 @@ h6 {
   padding-bottom: 70px;
   position: relative;
   background: white;
+  border-radius: 0 0 0 0/0 0 0 0;
 }
 
 .reservation__container {
@@ -896,9 +897,9 @@ input:focus {
 }
 
 .dishes__wave-down {
-  width: 100%;
-  height: 178px;
-  background: url("../img/main/excellence/wave-down.png") no-repeat;
+  width: 104%;
+  height: 100px;
+  background: url("../img/main/reservation/wave-up.svg") no-repeat;
   background-size: cover;
 }
 
@@ -920,6 +921,8 @@ input:focus {
 
 .pizza {
   background-color: #FFFFFF;
+  padding-bottom: 100px;
+  border-radius: 0 0 200px 0/0 0 150px 0;
 }
 
 .pizza__container {
@@ -1353,6 +1356,18 @@ input[type=radio]:checked + label .span-decor::after {
   height: 100%;
 }
 
+.spollers__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px 20px;
+}
+
 .popap {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -1416,7 +1431,7 @@ input[type=radio]:checked + label .span-decor::after {
   line-height: 36px;
   /* identical to box height */
   color: #3B3B3B;
-  margin-bottom: 11px;
+  margin-bottom: 10px;
 }
 
 .popap__paragraf {
@@ -1505,7 +1520,7 @@ input[type=radio]:checked + label .span-decor::after {
 }
 
 .popap-pizza:target .popap {
-  top: 10%;
+  top: 8%;
 }
 
 .card__basket:target {
@@ -1544,6 +1559,31 @@ input[type=radio]:checked + label .span-decor::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.wave-up {
+  margin-top: 40px;
+  background: url("../img/main/pizza/wave-up-header.svg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80px;
+}
+
+.pizza__title {
+  margin-bottom: 50px;
+}
+
+.pizza {
+  position: relative;
+}
+
+.pizza__decor-ibg {
+  position: absolute;
+  z-index: 10;
+  bottom: -160px;
+  left: -60px;
+  width: 24%;
+  padding-bottom: 23%;
 }
 
 .header__info-block {
@@ -1875,6 +1915,10 @@ input[type=radio]:checked + label .span-decor::after {
   .excellence__decor-one-ibg {
     top: -100px;
   }
+
+  .dishes__wave-down {
+    width: 101%;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -1962,7 +2006,7 @@ input[type=radio]:checked + label .span-decor::after {
 @media (max-width: 720px) {
   .popap {
     width: 96%;
-    padding: 10px;
+    padding: 5px 10px 10px 10px;
   }
 }
 
@@ -2030,6 +2074,8 @@ input[type=radio]:checked + label .span-decor::after {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
+    margin-bottom: 12px;
+    padding-bottom: 13px;
   }
 
   .popap__buttons-size {
@@ -2054,12 +2100,6 @@ input[type=radio]:checked + label .span-decor::after {
     top: -38px;
     width: 110px;
     padding-bottom: 96px;
-  }
-}
-
-@media (max-width: 420px) {
-  .popap {
-    top: 15%;
   }
 }
 
@@ -2179,8 +2219,21 @@ input[type=radio]:checked + label .span-decor::after {
     min-width: 100px;
   }
 
+  .pizza {
+    padding-bottom: 85px;
+  }
+
   .pizza__cards {
     gap: 40px 20px;
+  }
+
+  .pizza__title {
+    margin-bottom: 40px;
+  }
+
+  .pizza__decor-ibg {
+    bottom: -120px;
+    left: -20px;
   }
 
   .info-block__items {
@@ -2358,6 +2411,20 @@ input[type=radio]:checked + label .span-decor::after {
     -webkit-transform: translate(-50%, -20%);
         -ms-transform: translate(-50%, -20%);
             transform: translate(-50%, -20%);
+  }
+
+  .pizza {
+    padding-bottom: 80px;
+    border-radius: 0 0 150px 0/0 0 150px 0;
+  }
+
+  .pizza__title {
+    margin-bottom: 30px;
+  }
+
+  .pizza__decor-ibg {
+    bottom: -80px;
+    left: -20px;
   }
 
   .header__info-block {
@@ -2638,5 +2705,21 @@ input[type=radio]:checked + label .span-decor::after {
     height: 134px;
     top: -140px;
     right: -35px;
+  }
+
+  .pizza {
+    padding-bottom: 80px;
+    border-radius: 0 0 80px 0/0 0 80px 0;
+  }
+
+  .wave-up {
+    background-size: cover;
+  }
+
+  .pizza__decor-ibg {
+    width: 125px;
+    height: 134px;
+    bottom: -70px;
+    left: -20px;
   }
 }
