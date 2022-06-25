@@ -939,7 +939,7 @@ input:focus {
   outline: 2px solid #E95A0E;
 }
 
-.__wave-down {
+.dishes__wave-down {
   width: 104%;
   height: 100px;
   background: url("../img/main/reservation/wave-up.svg") no-repeat;
@@ -2243,6 +2243,46 @@ input[type=number]:focus {
           justify-content: center;
 }
 
+.delivery-payment-spollers-title {
+  position: relative;
+}
+
+._spoller-init .delivery-payment-spollers-title {
+  cursor: pointer;
+}
+
+._spoller-init .delivery-payment-spollers-title::before {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/main/delivery-payment/плюс.svg");
+  -webkit-transform: translate(0, -50%) rotate(180deg);
+      -ms-transform: translate(0, -50%) rotate(180deg);
+          transform: translate(0, -50%) rotate(180deg);
+  border-radius: 50%;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+._spoller-init .delivery-payment-spollers-title._spoller-active::before {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/main/delivery-payment/минус.svg");
+  -webkit-transform: translate(0, -50%) rotate(360deg);
+      -ms-transform: translate(0, -50%) rotate(360deg);
+          transform: translate(0, -50%) rotate(360deg);
+  border-radius: 50%;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
 .header__info-block {
   padding: 17px 0 17px 0;
 }
@@ -2573,7 +2613,7 @@ input[type=number]:focus {
     top: -100px;
   }
 
-  .__wave-down {
+  .dishes__wave-down {
     width: 101%;
   }
 }
