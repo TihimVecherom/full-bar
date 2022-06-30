@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Корзина</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220630210739">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="fix" class="fix-popap"></div>
+
+		<header class="header">
+			<div class="header__content">
+				<section class="header__info-block info-block ">
+					<div class="info-block__container">
+						<div class="info-block__items ">
+							<div class="info-block__item">г. Химки, пр-т. Мельникова 2Б. ТД « Подземка»</div>
+							<div class="info-block__item">ПН-ВС: 12:00-23:00</div>
+							<div class="info-block__item">+38 (066) 564 30 65</div>
+						</div>
+						<div class="info-block__social social">
+							<a href="#" class="social__item"></a>
+							<a href="#" class="social__item"></a>
+						</div>
+					</div>
+				</section>
+				<section class="header__menu menu">
+					<div class="menu__container">
+						<a href="#" class="menu__logo-ibg">
+							<img class="img" src="img/header/logo/logo.png" alt="Логотип">
+						</a>
+
+						<nav class="menu__body ">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="home.html" class="menu__link">Главная</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+								<li class="menu__item"><a href="pizza.html" class="menu__link">Меню</a></li>
+								<li class="menu__item"><a href="promotions.html" class="menu__link">Акции</a></li>
+								<li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+								<li class="menu__item"><a href="delivery-payment.html" class="menu__link">Доставка</a></li>
+							</ul>
+						</nav>
+
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+
+						<div data-da=".info-block__social,719.98" class="menu__authorization authorization">
+							<a href="personal-area.html" class="authorization__user-ibg">
+								<img class="img" src="img/header/icon/User.svg" alt="Пользователь">
+							</a>
+							<a href="basket.html" class="authorization__basket-ibg">
+								<img class="img" src="img/header/icon/basket.svg" alt="Корзина">
+							</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</header>
+		<main class="main">
+
+			<div class="wave-up"></div>
+			<div class="main__content">
+				<section class="main-basket">
+					<div class="main-basket__container">
+						<div class="main-basket__title">
+							<h2 class="title">Корзина</h2>
+						</div>
+						<div class="main-basket__content">
+							<div class="main-basket__cards">
+								<div class="main-basket__card card-basket">
+									<div class="card-basket__picture-ibg">
+
+										<img src="img/main/pizza/pizza.jpg" alt="Пицца">
+
+									</div>
+									<div class="card-basket__content">
+										<div class="card-basket__title">Пицца “Маргарита”</div>
+										<div class="card-basket__paragraf">Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Maecenas dui quam nunc nibh quam</div>
+										<div class="card-basket__buttons">
+											<input checked type="radio" id="basket-choise" name="size-basket" />
+											<label for="basket-choise"><span>30 см</span></label>
+											<input type="radio" id="basket-choise-big" name="size-basket" />
+											<label for="basket-choise-big"><span>50 см</span></label>
+										</div>
+										<div class="card-basket__price-amount">
+											<div class="card-basket__price">450р</div>
+											<div class="card-basket__amount">
+
+												<div class="number">
+													<button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+													<input type="number" min="0" value="0" readonly>
+													<button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+												</div>
+											</div>
+										</div>
+										<button class="card-basket__delet"></button>
+									</div>
+								</div>
+								<div class="main-basket__card card-basket">
+									<div class="card-basket__picture-ibg">
+
+										<img src="img/main/pizza/pizza.jpg" alt="Пицца">
+
+									</div>
+									<div class="card-basket__content">
+										<div class="card-basket__title">Пицца “Маргарита”</div>
+										<div class="card-basket__paragraf">Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Maecenas dui quam nunc nibh quam</div>
+										<div class="card-basket__buttons">
+											<input checked type="radio" id="basket-choise-2" name="size-basket-2" />
+											<label for="basket-choise-2"><span>30 см</span></label>
+											<input type="radio" id="basket-choise-big-3" name="size-basket-2" />
+											<label for="basket-choise-big-3"><span>50 см</span></label>
+										</div>
+										<div class="card-basket__price-amount">
+											<div class="card-basket__price">450р</div>
+											<div class="card-basket__amount">
+												<div class="number">
+													<button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+													<input type="number" min="0" value="0" readonly>
+													<button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+												</div>
+											</div>
+										</div>
+										<button class="card-basket__delet"></button>
+									</div>
+								</div>
+								<div class="main-basket__card card-basket">
+									<div class="card-basket__picture-ibg">
+
+										<img src="img/main/pizza/pizza.jpg" alt="Пицца">
+
+									</div>
+									<div class="card-basket__content">
+										<div class="card-basket__title">Пицца “Маргарита”</div>
+										<div class="card-basket__paragraf">Lorem ipsum dolor sit amet, consectetur adipiscing
+											elit. Maecenas dui quam nunc nibh quam</div>
+										<div class="card-basket__buttons">
+											<input checked type="radio" id="basket-choise-1" name="size-basket-3" />
+											<label for="basket-choise-1"><span>30 см</span></label>
+											<input type="radio" id="basket-choise-big-1" name="size-basket-3" />
+											<label for="basket-choise-big-1"><span>50 см</span></label>
+										</div>
+										<div class="card-basket__price-amount">
+											<div class="card-basket__price">450р</div>
+											<div class="card-basket__amount">
+												<div class="number">
+													<button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+													<input type="number" min="0" value="0" readonly>
+													<button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+												</div>
+											</div>
+										</div>
+										<button class="card-basket__delet"></button>
+									</div>
+								</div>
+							</div>
+							<div class="your-order">
+								<div class="your-order__title">Ваш заказ:</div>
+								<div class="your-order__content">
+									<div class="your-order__items">
+										<div class="your-order__item">
+											<div class="your-order__text">
+												<div class="your-order__name-pizza">Пицца “Маргарита”</div>
+												<div class="your-order__paragraf">30 см, кол-во - 1</div>
+											</div>
+											<div class="your-order__price">450 р</div>
+										</div>
+										<div class="your-order__item">
+											<div class="your-order__text">
+												<div class="your-order__name-pizza">Пицца “Карбонара”</div>
+												<div class="your-order__paragraf">30 см, кол-во - 1</div>
+											</div>
+											<div class="your-order__price">550 р</div>
+										</div>
+										<div class="your-order__item">
+											<div class="your-order__text">
+												<div class="your-order__name-pizza">Пицца “Гавайская”</div>
+												<div class="your-order__paragraf">30 см, кол-во - 1</div>
+											</div>
+											<div class="your-order__price">470 р</div>
+										</div>
+										<div class="your-order__item">
+											<div class="your-order__text">
+												<div class="your-order__text-sum">Итого:</div>
+											</div>
+											<div class="your-order__sum"> 1470 р</div>
+										</div>
+									</div>
+
+									<div class="your-order__button"><button class="button">Оформить заказ</button></div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</section>
+				<section class="ordering">
+					<div class="ordering__title">
+						<h2 class="title">ОФОРМЛЕНИЕ ЗАКАЗА</h2>
+					</div>
+					<div class="ordering__container">
+
+
+						<div class="ordering__content">
+							<div class="ordering__content-title">Тип доставки</div>
+							<div class="ordering__content-choise">
+
+								<input class="input-radio-ordering" checked type="radio" id="ordering-choise-1" name="ordering" />
+								<label class="label-radio-ordering" for="ordering-choise-1"> <span></span>Курьером</label>
+
+								<input class="input-radio-ordering" type="radio" id="ordering-choise-2" name="ordering" />
+								<label class="label-radio-ordering" for="ordering-choise-2"> <span></span> Самовывоз</label>
+
+							</div>
+							<div class="ordering__block-input">
+								<input class="input-ordering" autocomplete="off" placeholder="ФИО" type="text">
+								<input class="input-ordering" autocomplete="off" placeholder="Телефон" type="text">
+								<input class="input-ordering" autocomplete="off" placeholder="Адрес" type="text">
+								<input class="input-ordering-data" autocomplete="off" placeholder="Дата" type="text">
+								<input class="input-ordering-time" autocomplete="off" placeholder="Время" type="text">
+								<input class="input-ordering-type" autocomplete="off" placeholder="Тип оплаты" type="text">
+							</div>
+							<div class="ordering__button">
+								<button class="button">Оформить заказ</button>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+
+				<div class="reservation__wave-down"></div>
+			</div>
+
+		</main>
+		<footer class="footer">
+
+			<div class="footer__content">
+
+				<section class="footer__menu menu">
+					<div class="menu__container menu-footer-container">
+
+
+
+						<a href="#" class="menu__logo-ibg">
+							<img class="img" src="img/header/logo/logo.png" alt="Логотип">
+							<span class="menu__logo-name">Full Bar</span>
+						</a>
+
+
+
+
+						<nav class="menu__body-footer ">
+							<ul class="menu__list-footer">
+								<li class="menu__item item-footer"><a href="home.html" class="menu__link link-footer">Главная</a></li>
+								<li class="menu__item item-footer"><a href="#" class="menu__link link-footer">О нас</a></li>
+								<li class="menu__item item-footer"><a href="#" class="menu__link link-footer">Меню</a></li>
+								<li class="menu__item item-footer"><a href="#" class="menu__link link-footer">Акции</a></li>
+								<li class="menu__item item-footer"><a href="#" class="menu__link link-footer">Контакты</a></li>
+								<li class="menu__item item-footer"><a href="#" class="menu__link link-footer">Доставка</a></li>
+							</ul>
+						</nav>
+						<section class="footer__info-block info-block ">
+							<div class="info-block__container">
+								<div class="info-block__items items-footer">
+									<div class="info-block__item item-info-block-footer">г. Химки, пр-т. Мельникова 2Б. ТД « Подземка»
+									</div>
+									<div class="info-block__item item-info-block-footer ">ПН-ВС: 12:00-23:00
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</section>
+			</div>
+
+
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20220630210739"></script>
+</body>
+
+</html>
