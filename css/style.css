@@ -132,6 +132,29 @@ h6 {
   gap: 15px;
 }
 
+.spollers {
+  display: -ms-grid;
+  display: grid;
+  gap: 15px;
+}
+
+.spollers__item {
+  font-size: 1.25rem;
+}
+
+.spollers__title {
+  position: relative;
+}
+
+._spoller-init .spollers__title {
+  cursor: pointer;
+}
+
+._spoller-init .spollers__title::before,
+._spoller-init .spollers__title::after {
+  content: "";
+}
+
 .spollers__item {
   font-size: 1.25rem;
 }
@@ -187,7 +210,7 @@ h6 {
   right: 20px;
   width: 30px;
   height: 30px;
-  background: url("../img/main/delivery-payment/плюс.svg");
+  background: url("src/img/main/delivery-payment/плюс.svg");
   -webkit-transform: translate(0, -50%) rotate(180deg);
       -ms-transform: translate(0, -50%) rotate(180deg);
           transform: translate(0, -50%) rotate(180deg);
@@ -203,7 +226,7 @@ h6 {
   right: 20px;
   width: 30px;
   height: 30px;
-  background: url("../img/main/delivery-payment/минус.svg");
+  background: url("src/img/main/delivery-payment/минус.svg");
   -webkit-transform: translate(0, -50%) rotate(360deg);
       -ms-transform: translate(0, -50%) rotate(360deg);
           transform: translate(0, -50%) rotate(360deg);
